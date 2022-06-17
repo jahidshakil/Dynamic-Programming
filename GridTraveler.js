@@ -1,4 +1,4 @@
-// How maby ways are there to travel a grid from top left to bottom right corner of m*n grid? You re only allowed to move bottom and right.
+// How many ways are there to travel a grid from top left to bottom right corner of m*n grid? You re only allowed to move bottom and right.
 
 const GridTraveler = (m, n, memo = {}) => {
     const key = m + "," + n;
