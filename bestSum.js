@@ -6,7 +6,7 @@ const bestSum = (targetSum, nums, memo = {}) => {
 
     for (let num of nums) {
         const remainder = targetSum - num;
-        const remainderCombination = bestSum(remainder, nums);
+        const remainderCombination = bestSum(remainder, nums,memo);
         if (remainderCombination !== null) {
             const combination = [...remainderCombination, num];
             if (shortestCombination===null || combination.length < shortestCombination.length) {
@@ -21,5 +21,7 @@ const bestSum = (targetSum, nums, memo = {}) => {
 
 console.log(bestSum(7, [5, 3, 4, 7]))
 console.log(bestSum(11, [5, 3, 4, 7]))
-console.log(bestSum(101,[5,3,4,7]))
+console.log(bestSum(11, [5, 3, 4, 7]))
+
+console.log(bestSum(100,[5,3,40,7]))
 
