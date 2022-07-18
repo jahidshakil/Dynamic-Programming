@@ -20,7 +20,7 @@ console.log(howSum(7, [2, 3]));
 console.log(howSum(14, [2, 3,4]));
 console.log(howSum(11, [3,1,2]));
 console.log(howSum(8, [4, 3]));
-console.log(howSum(3000, [7, 14]));
+console.log(howSum(30, [2, 14]));
 
 
 // bruteforce
